@@ -61,7 +61,7 @@ uploaded = st.file_uploader("Upload an aerial image (jpg/png)", type=["jpg","jpe
 col1, col2 = st.columns([1,1])
 
 if uploaded is None:
-    st.info("Upload an image to see a fake prediction and Grad-CAM overlay.")
+    st.info("Upload an image to see a prediction and Grad-CAM overlay.")
 else:
     img_bytes = uploaded.read()
     uploaded.seek(0)
